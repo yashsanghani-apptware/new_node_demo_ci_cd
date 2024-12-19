@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose the port your app is running on (3030)
-EXPOSE 3030
+EXPOSE 3033
 
 # Command to run the server when the container starts
 CMD ["node", "server.js"]
