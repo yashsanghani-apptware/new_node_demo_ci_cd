@@ -25,8 +25,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: docker-compose down 
-    - run: ddocker compose up --build -d 
+    - run: sudo docker-compose down 
+    - run: sudo docker compose up --build -d 
     # - run: pm2 restart Backend
 
     
